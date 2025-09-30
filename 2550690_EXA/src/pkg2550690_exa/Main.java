@@ -1,0 +1,39 @@
+package pkg2550690_exa;
+
+import java.util.Scanner;
+
+
+public class Main {
+ 
+    public static void main(String[] args) {
+    int sb,cantidad,st,sr;
+        Scanner input = new Scanner(System.in);
+        sb = 5000;
+        System.out.println (" INGRESA 1 PARA CONSULTAR SALDO");
+        System.out.println (" INGRESA 2 PARA RETIRAR DINERO");
+        System.out.println (" INGRESA 3 PARA DEPOSITAR DINERO");
+        cantidad = input.nextInt();
+       
+      if (cantidad == 1){
+      System.out.println ("BIENVENIDO A LA CONSULTA DE SALDO ");
+       System.out.println ("TU SALDO ES: ");
+       System.out.println (sb);
+      } else if (cantidad == 2){
+      System.out.println ("¿CUANTO DINERO TE GUSTARIA RETIRAR? ");
+        sr = input.nextInt();
+        st = sb - sr;
+        System.out.println ("Ahora tu saldo es: ");
+         System.out.println (st);
+      } else if(cantidad == 3) {
+       System.out.println ("¿CUANTO DINERO TE GUSTARIA DEPOSITAR? ");
+        sr = input.nextInt();
+        st = sb - sr;
+        System.out.println ("Ahora tu saldo es: ");
+         System.out.println (st);
+      }else{
+      System.out.println ("SOLO DIGITOS DE 1 A 3 ");
+      }
+    }
+}
+
+//MONTAÑEZ
